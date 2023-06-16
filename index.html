@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" type="icon/x-image" src="/1686781979536.png">
+    <title>Dice Wars</title>
+</head>
+<header>
+    <!-- Modal Image -->
+    <div class="popup-container">
+        <span class="popup-close">&times;</span>
+        <img class="popup-image" src="/1686781979536.png" alt="Pop-up Image">
+    </div>
+
+
+</header>
+<body>
+
+    <!-- Rules Section -->
+<section class="Top"> 
+    <div class="container">
+        <div class="top_area">
+            <button>Rules</button>
+        </div>
+    </div>
+</section>
+<!-- Game Section  -->
+<!-- Player 1  -->
+<div class="container">
+<div class="player_0 player active">
+    <h2 class="player-name" id="name-0">Player 1</h2>
+    <div class="player-0-score" id="score-0">30</div>
+    <div class="current-box">
+        <div class="label"> Current</div>
+        <div class="player-0-current-score" id="current-0">15</div>
+    </div>
+</div>
+<!-- End of player 1 -->
+
+<!-- Player 2 -->
+<div class="player_1">
+    <h2 class="player-name" id="name-0">Player 2</h2>
+    <div class="player-1-score" id="score-0">30</div>
+    <div class="current-box">
+        <div class="label"> Current</div>
+        <div class="player-1-current-score" id="current-0">11</div>
+    </div>
+</div>
+<!-- End of Player 2 -->
+
+<!-- Buttons -->
+<button class="btn-restart">Restart</button>
+<button class="btn-roll">Roll Dice</button>
+<button class="btn-pause">Pause</button>
+
+<!-- Winning Score -->
+<input type="text" id="winningScore" placeholder="Final Score">
+
+<!-- Dice Images -->
+<img clas="dice" src="/img/Dice-5.png">
+
+
+
+</div>
+
+    <!-- Scripts -->
+    <!-- Modal Image -->
+    <script>
+       window.addEventListener('load', function() {
+    let popupContainer = document.querySelector('.popup-container');
+    let closeButton = document.querySelector('.popup-close');
+
+    popupContainer.style.display = 'block';
+
+    closeButton.addEventListener('click', function() {
+        popupContainer.style.display = 'none';
+    });
+});
+
+
+    </script>
+    <script src="/script.js"></script>
+</body>
+</html>
