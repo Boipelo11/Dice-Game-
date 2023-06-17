@@ -160,13 +160,13 @@ button:focus{
 .btn-pause {top:490px}
 
 /* Dice Img */
-.dice {
-    position:absolute;
-    left: 50%;
-    top: 180px;
-    transform: translateX(-50%);
-    height: 100px;
-    box-shadow: 0px 10px 60px rgba( 0, 0, 0, 0.10);
+/*.dice {*/
+/*    position:absolute;*/
+/*    left: 50%;*/
+/*    top: 180px;*/
+/*    transform: translateX(-50%);*/
+/*    height: 100px;*/
+/*    box-shadow: 0px 10px 60px rgba( 0, 0, 0, 0.10);*/
 
 
 }
@@ -196,5 +196,46 @@ button:focus{
 
 
 #winningScore focus{outline: none;}
+
+/*die*/
+.dice-container {
+    display: flex;
+    justify-content: center;
+    background-color: darkgoldenrod;
+    margin-bottom: 10%;
+    border: darkgoldenrod;
+}
+
+
+
+.dice {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    margin-right: 20px;
+    background-color: wheat;
+    border-radius: 13px;
+    box-shadow: 0px 0px 10px floralwhite ;
+}
+
+.dice-dot {
+    --top: 0%;
+    --left:0%;
+
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    /*making it a circle*/
+    border-radius: 50%;
+    /*dot positioning*/
+    position: absolute;
+    top: var(--top);
+    left: var(--left);
+    transform: translateX(calc(var(--left) * -1) ) translateY(calc(var(--top) * -1) );
+}
+
+.btn-roll-dice {
+    margin-top: 150px;
+}
 
 
