@@ -4,7 +4,25 @@ html {
     box-sizing: border-box;
 }
 
-body
+body {
+    background-image: linear-gradient(rgba (6, 20, 20,0.4),rgba(62,20,20,0.4)) ;
+    background-size: cover;
+    background-position: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+    position: relative;
+    height: 100vh;
+    color: #555;
+    overflow:hidden important!;
+
+
+}
+
+.clearfix::after{
+    content:"";
+    display: table;
+    clear: both;
+} 
 
 /* Styling for the pop-up container */
 .popup-container {
@@ -46,15 +64,19 @@ body
 
 
 /* Container */
-.container{
+.wrapper{
     width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate (-50%, -50%);
     background-color: #f5f5f5;
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.3);
-    overflow:hidden
+    overflow: hidden;
 }
 
 /* Players Boxes */
@@ -78,10 +100,11 @@ body
 
 .player-1-score, .player-0-score{
     text-align: center;
-    font-size: 70px;
+    font-size: 90px;
     font-weight: 100;
-    color: #dd8407;
+    color: #f374ae;
     margin-bottom: 130px;
+
 }
 
 .active {background-color: #f5f5f577;}
@@ -91,29 +114,32 @@ body
     content: "";
     font-size: 50px;
     position: absolute;
-    color: #dd8407;
+    color: #555;
     top: -7px;
     right: 10px;
 }
 
 .current-box {
-    background-color: #dd8407;
+    background-color: #f374ae;
     color: #f5f5f5;
-    width: 40%;
+    width: 160px;
+    height: 120px;
     margin: 0 auto;
     padding: 12px;
     text-align: center;
+    border: 1px;
+    border-radius: 10px;
 }
 
 .label{
     text-transform: uppercase;
     margin-bottom: 10px;
-    font-size: 14px;
-    color:#222 ;
+    font-size: 20px;
+    color:#f5f5f5 ;
 }
 
 .player-0-current-score, .player-1-current-score {
-    font-size: 30px;
+    font-size: 40px;
 }
 
 /* Buttons */
@@ -122,8 +148,8 @@ button{
     width: 200px;
     left: 50%;
     transform: translateX(-50%);
-    color: #fff;
-    background: none;
+    color:#fff;
+    background: #ed9390;
     border: 1px;
     border-radius: 5px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -132,14 +158,19 @@ button{
     cursor: pointer;
     font-weight: 300;
     transition: background-color 0.3s, color 0.3s;
+    padding: 10px;
 }
 
 button:hover {font-weight: 600;}
 
+button:focus{
+    outline:none;
+}
+
 /* Functioning Buttons */
-.btn-restart {top: 48px}
-.btn-roll {top: 406px}
-.btn-pause {top:470px}
+.btn-restart {top: 45px}
+.btn-roll {top: 420px}
+.btn-pause {top:490px}
 
 /* Dice Img */
 .dice {
@@ -165,13 +196,15 @@ button:hover {font-weight: 600;}
     top: 520px;
     left: 50%;
     text-transform: uppercase;
-    color: #555;
+    color: #fff;
+    background-color: #e6b89c;
     font-size: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     padding: 10px;
     width: 160px;
-    transform: translateX(-50%)
+    transform: translateX(-50%);
+    top: 550px
 }
 
 
