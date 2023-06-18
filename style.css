@@ -310,5 +310,41 @@ button:focus{
     top: 0;
 }
 
+/*Reset button*/
+.btn-reset-dice {
+    /*display: inline-block;*/
+    margin-top: 600px;
+    margin-bottom: 10px;
+    justify-content: center;
+    padding: 10px 10px;
+    border-radius: 4px;
+    background-color: black;
+    color: gold;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    /*position: relative;*/
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
 
+.btn-reset-dice::before {
+    content: "";
+    /*position: absolute;*/
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: gold;
+    transition: all 0.3s ease;
+}
+
+.btn-reset-dice:hover {
+    background-color: gold;
+    color: black;
+}
+
+.btn-reset-dice:hover::before {
+    top: 0;
+}
 
