@@ -76,13 +76,21 @@ body {
 
 /* Player Names */
 .player-name {
+    /*text-align: center;*/
+    /*text-transform: uppercase;*/
+    /*font-weight: 100;*/
+    /*margin-top: 20px;*/
+    /*margin-bottom: 10px;*/
+    /*position: relative;*/
     text-align: center;
     text-transform: uppercase;
-    font-weight: 100;
+    font-weight: bold;
+    color: gold;
+    background-color: black;
     margin-top: 20px;
     margin-bottom: 10px;
     position: relative;
-
+    /*border: 2px solid gold;*/
 }
 
 /*.player-1-score, .player-0-score{*/
@@ -95,7 +103,7 @@ body {
 /*}*/
 
 /*.active {background-color: #f5f5f577;}*/
-.active .player-name {font-weight: 200;}
+/*.active .player-name {font-weight: 200;}*/
 
 .active .player-name::after{
     content: "";
