@@ -52,6 +52,8 @@ function createDice(number) {
     return dice;
 }
 
+
+
 function randomizeDice(diceContainer, numberOfDice) {
 diceContainer.innerHTML = "";
 
@@ -61,6 +63,7 @@ for  (let i = 0; i < numberOfDice; i++)  {
 
     diceContainer.appendChild(dice);
     }
+    
 }
 
 const NUMBER_OF_DICE = 2;
@@ -75,6 +78,15 @@ btnRollDice.addEventListener("click", () => {
     }, 50);
 setTimeout(() => clearInterval(interval), 1000);
 });
+
+
+
+
+
+
+
+
+
 
 
 
